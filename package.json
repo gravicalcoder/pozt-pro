@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "vercel --prod"
   },
   "keywords": [],
   "author": "",
@@ -14,11 +15,13 @@
     "@react-three/drei": "^9.32.4",
     "@react-three/fiber": "^8.8.7",
     "@react-three/postprocessing": "2.6",
+    "leva": "^0.9.34",
     "r3f-perf": "^6.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "three": "^0.145.0"
+    "three": "^0.145.0",
+    "vercel": "^28.10.1"
   },
   "browserslist": {
     "production": [
@@ -31,5 +34,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   }
 }
